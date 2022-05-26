@@ -1,0 +1,142 @@
+<div id="header">
+    <h1>Productos</h1>
+    <span>De la Empresa</span>
+    <h2>Gusto al Gusto</h2>
+    <!-- Button trigger modal -->
+
+    <div id="btnpro">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar Producto
+        </button>
+    </div>
+</div>
+
+
+<table   id="posicion"  class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>
+              <button type="button" class="btn btn-warning m-2" data-bs-toggle="modal" data-bs-target="#editar"> editar </button>
+              <button type="button" class="btn btn-danger m-2">Eliminar</button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#enviar">Enviar</button>
+        </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>
+            <button type="button" class="btn btn-warning m-2" data-bs-toggle="modal" data-bs-target="#editar"> editar </button>
+            <button type="button" class="btn btn-danger m-2">Eliminar</button>
+            <button type="button" class="btn btn-secondary">Enviar</button>
+      </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+          <td>
+            <button type="button" class="btn btn-warning m-2" data-bs-toggle="modal" data-bs-target="#editar"> editar </button>
+            <button type="button" class="btn btn-danger m-2">Eliminar</button>
+            <button type="button" class="btn btn-secondary">Enviar</button>
+      </td>
+        </tr>
+      </tbody>
+  </table>
+
+  <!-- Modal  enviar-->
+  <div class="modal fade" id="enviar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+              <option selected>Selecciona la sucursal</option>
+              <option value="1">San Pedro Cp</option>
+              <option value="2">San Luis</option>
+              <option value="3">Xela Cantel</option>
+            </select>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="cantidad">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Modal Agregar-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agregar Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="inputPassword5" class="form-label">Nombre</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <label for="inputPassword5" class="form-label">Precio</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <label for="inputPassword5" class="form-label">Cantidad</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+ 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal editar -->
+<div class="modal fade" id="editar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="inputPassword5" class="form-label">Nombre</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          <label for="inputPassword5" class="form-label">Precio</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          <label for="inputPassword5" class="form-label">Cantidad</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
